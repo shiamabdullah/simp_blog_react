@@ -7,16 +7,7 @@ const Navbar = () => {
       <h1>Shiamify</h1>
       <div className="links">
         <Link to="/">Home</Link>
-        <Link
-          to="/create"
-          style={{
-            color: "white",
-            backgroundColor: "#f1356d",
-            borderRadius: "8px",
-          }}
-        >
-          Add Blog
-        </Link>
+        <Link to="/create">New Blog</Link>
       </div>
     </div>
   );
