@@ -31,6 +31,7 @@ const Create = () => {
       </form>
       <p>{title}</p>
       <p>{body}</p>
+      <p>{author}</p>
     </div>
   );
 };
