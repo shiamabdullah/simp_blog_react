@@ -13,10 +13,16 @@ const Home = () => {
       id: 3,
     },
   ]);
+  // this new blog will return a new filtered array based on the array. It won't delete any data
+
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs" />
+      <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
     </div>
   );
 };
