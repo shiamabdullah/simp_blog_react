@@ -5,6 +5,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   // this new blog will return a new filtered array based on the array. It won't delete any data
+  const [isPending, setIsPending] = useState(true);
 
   useEffect(() => {
     fetch("http://localhost:8000/blogs")
@@ -13,11 +14,13 @@ const Home = () => {
       })
       .then((data) => {
         setBlogs(data);
+        setIsPending(false);
       });
   }, []);
 
   return (
     <div className="home">
+      {isPending && <div>loading</div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs" />}
     </div>
   );
