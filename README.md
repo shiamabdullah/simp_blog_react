@@ -1,6 +1,16 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A quick Peek:
+<kbd>
+<a href="https://ibb.co/RzFjgQj"><img src="https://i.ibb.co/RzFjgQj/Screenshot-1253.png" alt="Screenshot-1253" border="0"></a> <a href="https://ibb.co/RTxVmjW"><img src="https://i.ibb.co/RTxVmjW/Screenshot-1254.png" alt="Screenshot-1254" border="0"></a> <a href="https://ibb.co/w0NjpPm"><img src="https://i.ibb.co/w0NjpPm/Screenshot-1255.png" alt="Screenshot-1255" border="0"></a> <a href="https://ibb.co/FHMpNzH"><img src="https://i.ibb.co/FHMpNzH/Screenshot-1256.png" alt="Screenshot-1256" border="0"></a>
+</kbd>
+
+# How To Use:
+Firstly npm start to start the react app.\
+For the json server run this in the source directory:\
+npx json-server --watch data/db.json --port 8000
+
 
 ## Available Scripts
 
